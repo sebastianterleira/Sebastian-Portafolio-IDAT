@@ -1,0 +1,42 @@
+.home {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  max-width: 61.25rem;
+  min-height: 100vh;
+  padding: 7rem 1.875rem 2rem;
+  width: 100%;
+}
+
+.home::before {
+  content: "";
+  height: 90px;
+  margin: 0 auto;
+}
+
+.home__title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.home__former-name {
+  text-decoration: line-through;
+}
+
+.home__emphasis {
+  font-weight: 700;
+}
+
+.home__subtitle {
+  font-size: clamp(1.25rem, 3vw, 1.625rem);
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.home__divider {
+  border-left: 1px solid transparent;
+  height: 6.25rem;
+  margin: 6.25rem auto 0;
+}
