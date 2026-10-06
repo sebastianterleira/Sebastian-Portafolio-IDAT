@@ -47,7 +47,7 @@
 
 .nav__logo-link:hover .nav__logo--inverse,
 .nav__logo-link:focus-visible .nav__logo--inverse {
-  filter: drop-shadow(0 0 9px rgba(160, 0, 0, 0.75));
+  filter: drop-shadow(0 0 9px rgba(90, 2, 2, 0.75));
   opacity: 1;
 }
 
