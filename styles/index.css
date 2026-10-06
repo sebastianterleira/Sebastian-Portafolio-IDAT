@@ -1,1 +1,12 @@
 @import "./GlobalStyles.css";
+@import "./header.css";
+@import "./homeSection.css";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
