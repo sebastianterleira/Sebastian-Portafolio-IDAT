@@ -11,13 +11,6 @@
   animation: fadein 2s;
 }
 
-.line {
-  border-left: 1px solid transparent;
-  height: 90px;
-  margin: 0 auto;
-  margin-top: 0px;
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
