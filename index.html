@@ -11,7 +11,11 @@
       <header class="header">
         <nav class="nav">
           <a class="nav__logo-link" href="#home" aria-label="Volver al inicio">
-            <img src="assets/Logo.png" class="nav__logo" alt="Logo del portafolio de Sebastian Terleira" />
+            <img
+              src="assets/Logo.png"
+              class="nav__logo"
+              alt="Logo del portafolio de Sebastian Terleira"
+            />
             <img
               src="assets/LogoInverso.png"
               class="nav__logo nav__logo--inverse"
@@ -39,6 +43,7 @@
           </div>
         </nav>
       </header>
+
       <section id="home" class="home">
         <h1 class="home__title">
           Hi, I'm
@@ -54,8 +59,37 @@
         <div id="portfolio" class="home__divider"></div>
       </section>
 
-      <section id="projects" class="projects">
-        <h2>Mis proyectos</h2>
+      <section
+        id="projects"
+        class="projects"
+        aria-labelledby="projects__title"
+      >
+        <article class="project-card">
+          <div class="project-card__content">
+            <h3 class="project-card__title">Brillaire</h3>
+            <p class="project-card__type">Website</p>
+            <a
+              class="project-card__link"
+              href="https://wisi-indie.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              >View site</a
+            >
+          </div>
+        </article>
+        <article class="project-card project-card--alternate">
+          <div class="project-card__content">
+            <h3 class="project-card__title">CarnesFrescas</h3>
+            <p class="project-card__type">Website</p>
+            <a
+              class="project-card__link"
+              href="https://astro-spotify-clone-galanga.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              >View site</a
+            >
+          </div>
+        </article>
       </section>
 
       <section id="contact" class="contact">
