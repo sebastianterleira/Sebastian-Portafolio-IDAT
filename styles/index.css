@@ -2,6 +2,7 @@
 @import "./header.css";
 @import "./homeSection.css";
 @import "./projects.css";
+@import "./contact.css";
 
 .main {
   min-height: 100vh;
