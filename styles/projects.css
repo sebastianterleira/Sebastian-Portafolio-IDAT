@@ -1,13 +1,9 @@
 .projects {
-  display: flex;
-  flex-direction: column;
   padding-top: 5rem;
 }
 
 .project-card {
   border-bottom: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
   padding: 5rem 1.875rem;
   animation: project-reveal 700ms ease-out both;
 }
@@ -25,12 +21,7 @@
 }
 
 .project-card__content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   max-width: 69.25rem;
-  text-align: center;
-  width: 100%;
 }
 
 .project-card__title {
@@ -56,7 +47,6 @@
 }
 
 .img__project {
-  display: block;
   border-radius: 9px;
   margin-top: 2.7rem;
   box-shadow: -1px 3px 28px 0px rgba(0, 0, 0, 0.41);
