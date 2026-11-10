@@ -69,10 +69,3 @@
 .nav__cv {
   font-size: 0.8rem;
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .nav__logo,
-  .header .nav-link {
-    transition: none;
-  }
-}
