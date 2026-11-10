@@ -9,7 +9,9 @@
 }
 
 .header .navbar {
-  padding-block: 0.75rem;
+  box-sizing: border-box;
+  max-width: 61.25rem;
+  padding: 1.25rem;
 }
 
 .nav__logo-link {
@@ -62,10 +64,34 @@
   transition: color 180ms ease;
 }
 
+.header .navbar-nav .nav-link.links__item {
+  padding-inline: 0;
+  margin-right: 1.25rem;
+}
+
+.header .navbar-nav .nav-link.links__item:last-child {
+  margin-right: 0;
+}
+
 .header .nav-link:hover {
   color: #a00000;
 }
 
 .nav__cv {
-  font-size: 0.8rem;
+  color: #3d3b3b;
+  font-size: 0.7em;
+}
+
+@media (min-width: 992px) {
+  .header .navbar {
+    box-sizing: content-box;
+  }
+
+  .header .navbar-collapse {
+    justify-content: space-between;
+  }
+
+  .header .navbar-nav {
+    margin-inline: auto;
+  }
 }
