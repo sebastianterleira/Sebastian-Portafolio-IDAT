@@ -1,54 +1,48 @@
 .header {
-  backdrop-filter: blur(8px);
-  width: 100%;
-  position: -webkit-sticky;
   position: fixed;
   top: 0;
-  z-index: var(--zIndex-1);
+  z-index: 1030;
+  width: 100%;
+  background-color: rgb(255 255 255 / 88%);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
-.nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  max-width: 61.25rem;
-  padding-bottom: 1.25rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 1.25rem;
+.header .navbar {
+  padding-block: 0.75rem;
 }
 
 .nav__logo-link {
-  display: block;
-  height: 50px;
   position: relative;
+  display: block;
+  flex-shrink: 0;
   width: 52px;
+  height: 50px;
 }
 
 .nav__logo {
-  height: 50px;
-  left: 0;
-  object-fit: contain;
   position: absolute;
   top: 0;
+  left: 0;
+  width: 52px;
+  height: 50px;
+  object-fit: contain;
   transition:
     opacity 180ms ease,
     filter 180ms ease;
-  width: 52px;
 }
 
 .nav__logo--inverse {
-  filter: drop-shadow(0 0 0 rgba(160, 0, 0, 0));
-  opacity: 0;
-  height: 54px;
   width: 54px;
+  height: 54px;
+  opacity: 0;
+  filter: drop-shadow(0 0 0 rgb(160 0 0 / 0%));
 }
 
 .nav__logo-link:hover .nav__logo--inverse,
 .nav__logo-link:focus-visible .nav__logo--inverse {
-  filter: drop-shadow(0 0 9px rgba(90, 2, 2, 0.75));
   opacity: 1;
+  filter: drop-shadow(0 0 9px rgb(90 2 2 / 75%));
 }
 
 .nav__logo-link:hover .nav__logo:not(.nav__logo--inverse),
@@ -56,35 +50,29 @@
   opacity: 0;
 }
 
-.nav__logo-link:focus-visible {
+.nav__logo-link:focus-visible,
+.header .nav-link:focus-visible,
+.header .nav__cv:focus-visible {
   outline: 2px solid #a00000;
   outline-offset: 4px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .nav__logo {
-    transition: none;
-  }
+.header .nav-link {
+  color: #252525;
+  transition: color 180ms ease;
 }
 
-.nav__links {
-  display: flex;
-}
-
-.links__item {
-  margin-right: 20px;
-  text-decoration: none;
-  line-height: 0;
+.header .nav-link:hover {
+  color: #a00000;
 }
 
 .nav__cv {
-  color: #3d3b3b;
-  margin: 0;
-  font-size: 0.7em;
+  font-size: 0.8rem;
 }
 
-@media screen and (max-width: 992px) {
-  .nav__links {
-    display: none;
+@media (prefers-reduced-motion: reduce) {
+  .nav__logo,
+  .header .nav-link {
+    transition: none;
   }
 }
